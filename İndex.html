@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>hsymc web sitesi</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap');
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Poppins', sans-serif;
+      background: linear-gradient(135deg, #667eea, #764ba2);
+      color: #fff;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+
+    header {
+      padding: 30px 20px;
+      text-align: center;
+      font-size: 2.5rem;
+      font-weight: 600;
+      letter-spacing: 2px;
+      text-shadow: 1px 1px 4px rgba(0,0,0,0.3);
+      animation: fadeInDown 1s ease forwards;
+    }
+
+    nav {
+      display: flex;
+      justify-content: center;
+      background: rgba(255,255,255,0.1);
+      box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+      border-radius: 0 0 15px 15px;
+      backdrop-filter: blur(10px);
+      animation: fadeIn 1.5s ease forwards;
+    }
+
+    nav a {
+      color: #fff;
+      padding: 15px 25px;
+      text-decoration: none;
+      font-weight: 600;
+      transition: background 0.3s, transform 0.3s;
+      border-radius: 8px;
+      margin: 10px 8px;
+      user-select: none;
+    }
+
+    nav a:hover {
+      background: rgba(255,255,255,0.25);
+      transform: scale(1.1);
+    }
+
+    main {
+      flex-grow: 1;
+      max-width: 900px;
+      margin: 40px auto 80px;
+      padding: 0 20px;
+      background: rgba(255,255,255,0.1);
+      border-radius: 20px;
+      box-shadow: 0 8px 30px rgba(0,0,0,0.2);
+      backdrop-filter: blur(15px);
+      color: #eee;
+      animation: fadeInUp 2s ease forwards;
+    }
+
+    section {
+      margin-bottom: 50px;
+    }
+
+    h1, h2 {
+      margin-bottom: 15px;
+      letter-spacing: 1.2px;
+    }
+
+    p {
+      line-height: 1.5;
+      font-weight: 300;
+      font-size: 1.1rem;
+    }
+
+    a {
+      color: #ffd166;
+      font-weight: 600;
+      text-decoration: none;
+      transition: color 0.3s;
+    }
+
+    a:hover {
+      color: #ffaf00;
+    }
+
+    footer {
+      text-align: center;
+      padding: 15px 10px;
+      background: rgba(0,0,0,0.25);
+      color: #ccc;
+      font-size: 14px;
+      user-select: none;
+      box-shadow: inset 0 1px 2px rgba(255,255,255,0.2);
+    }
+
+    @keyframes fadeInDown {
+      0% { opacity: 0; transform: translateY(-20px);}
+      100% { opacity: 1; transform: translateY(0);}
+    }
+    @keyframes fadeIn {
+      0% {opacity: 0;}
+      100% {opacity: 1;}
+    }
+    @keyframes fadeInUp {
+      0% {opacity: 0; transform: translateY(20px);}
+      100% {opacity: 1; transform: translateY(0);}
+    }
+
+    @media(max-width: 600px) {
+      header {
+        font-size: 1.8rem;
+        padding: 25px 10px;
+      }
+      nav {
+        flex-direction: column;
+        border-radius: 0 0 10px 10px;
+      }
+      nav a {
+        margin: 8px 0;
+        padding: 12px 0;
+        text-align: center;
+      }
+      main {
+        margin: 25px 10px 70px;
+        border-radius: 15px;
+        padding: 20px;
+      }
+      p {
+        font-size: 1rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<header>hsymc Web sitesi</header>
+
+<nav>
+  <a href="#anasayfa">Anasayfa</a>
+  <a href="#hakkimda">Hakkımda</a>
+  <a href="#iletisim">İletişim</a>
+</nav>
+
+<main>
+  <section id="anasayfa">
+    <h1>Hoşgeldin!</h1>
+    <p>Meehabalar ben hsymc web sitesinin sahibiyim burasî daha yeni yakînda daha fazla mod paylaşacağım </p>
+  </section>
+
+  <section id="hakkimda">
+    <h2>Hakkımda</h2>
+    <p>Merhaba, ben hüseyin web sitenin sahibi ve yönetiçisiyim web sitem daha yeni yakînda daha fazla mod paylaşaçagîm merak etmeyiniz</p>
+  </section>
+
+  <section id="iletisim">
+    <h2>İletişim</h2>
+    <p>Bana tiktok üzerinden ulaşabilirsiniz: <a href
+    <p>TikTok hesabım: <a href="https://www.tiktok.com/@hsymc8" target="_blank">@hsymc8</a></p>
+  </section>
+</main>
+
+<footer>© 2025 Hüseyin. Tüm hakları saklıdır.</footer>
+
+</body>
+</html>
